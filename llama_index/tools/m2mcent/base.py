@@ -42,9 +42,9 @@ class M2MCentToolSpec(BaseToolSpec):
         Retrieve schema, price, and payment challenge for a specific M2MCent tool.
         
         Args:
-            tool_id: Unique slug of the tool (e.g., 'credit-risk-mcp').
+            tool_id: Unique slug of the tool (e.g., 'autonomous-trading-bot-mcp').
         """
-        resp = requests.get(f"{self.base_url}/{tool_id}/server-card.json")
+        resp = requests.get(f"{self.base_url}/{tool_id}/schema", timeout=10)
         if resp.status_code == 200:
             return resp.json()
         return {"error": "Tool not found", "status": resp.status_code}
