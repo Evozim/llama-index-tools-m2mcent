@@ -1,6 +1,6 @@
 """
 M2MCent ToolSpec for LlamaIndex / LlamaHub
-Enables autonomous AI agents in LlamaIndex to query, execute, and settle payments for 1,005 specialized tools via x402 on Base Mainnet.
+Enables autonomous AI agents in LlamaIndex to query, execute, and settle payments for 1,062 specialized tools via x402 on Base Mainnet.
 """
 
 from typing import Any, Dict, List, Optional
@@ -10,7 +10,7 @@ from llama_index.core.tools.tool_spec.base import BaseToolSpec
 class M2MCentToolSpec(BaseToolSpec):
     """
     M2MCent Monolithic MCP & Agentic API Gateway ToolSpec.
-    Provides 1,005 micro-services across finance, security, biotech, 3D, and IoT.
+    Provides 1,062 micro-services across finance, security, biotech, 3D, and IoT.
     Settled trustlessly via x402 V2 micropayments in USDC on Base Mainnet.
     """
 
